@@ -1,8 +1,18 @@
 import React from "react";
-import "./App.css";
+import { PageHomeBase } from "./Pages/PageHome";
+import styled from 'styled-components/macro';
+
+const AppContainer = styled.div`
+  width: 100%;
+  height:100%;
+`
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <AppContainer>
+      <PageHomeBase/>
+    </AppContainer>
+  )
 }
 
 export default App;
