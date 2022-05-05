@@ -11,9 +11,12 @@ const ServicesAlignmentContainer = styled.div`
   height: 100%;
   margin-right: auto;
   margin-left: auto;
+  display: flex;
 `;
 
-const ServicesList = styled.ul``;
+const ServicesList = styled.ul`
+  list-style-type: "- ";
+`;
 const ServicesListItem = styled.li`
   font-size: 50px;
 `;
@@ -27,6 +30,8 @@ export const ServicesProvided = () => {
           <ServicesListItem>Dog Poop Pick up</ServicesListItem>
           <ServicesListItem>Fence and Deck Cleaning</ServicesListItem>
           <ServicesListItem>Leaf Pick Up</ServicesListItem>
+        </ServicesList>
+        <ServicesList>
           <ServicesListItem>Junk Removal</ServicesListItem>
           <ServicesListItem>Small Engine Repairs</ServicesListItem>
           <ServicesListItem>Parking Lot Cleanups</ServicesListItem>
