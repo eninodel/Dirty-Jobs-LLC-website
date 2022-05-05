@@ -18,16 +18,18 @@ const MenuContainer = styled.div`
   height: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 const MenuLink = styled.a`
   color: red;
+  text-decoration: none;
 `;
 
 export const Nav = () => {
   return (
     <NavContainer>
       <CenterAlignmentContainer>
-          <p>logo placeholder</p>
+        <p>logo placeholder</p>
         <MenuContainer>
           <MenuLink href="">Services</MenuLink>
           <MenuLink href="">Pricing</MenuLink>
