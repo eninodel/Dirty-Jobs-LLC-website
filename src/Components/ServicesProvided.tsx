@@ -6,24 +6,36 @@ const ServicesContainer = styled.div`
   height: 100%;
 `;
 
+const LargerHeading = styled.div`
+  font-size: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 1200px;
+`;
+
 const ServicesAlignmentContainer = styled.div`
   max-width: 1200px;
   height: 100%;
   margin-right: auto;
   margin-left: auto;
   display: flex;
+  justify-content: flex-end;
 `;
 
 const ServicesList = styled.ul`
   list-style-type: "- ";
 `;
 const ServicesListItem = styled.li`
-  font-size: 50px;
+  font-size: 40px;
 `;
 
 export const ServicesProvided = () => {
   return (
     <ServicesContainer>
+      <LargerHeading>Services We Provide</LargerHeading>
       <ServicesAlignmentContainer>
         <ServicesList>
           <ServicesListItem>Pressure Washing</ServicesListItem>
@@ -38,6 +50,10 @@ export const ServicesProvided = () => {
           <ServicesListItem>Weed Control and more!</ServicesListItem>
         </ServicesList>
       </ServicesAlignmentContainer>
+      <LargerHeading>
+        If you don&apos;t see a service here that you&apos;d like, contact us and request
+        it!
+      </LargerHeading>
     </ServicesContainer>
   );
 };
